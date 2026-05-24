@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ShopNest.API/ShopNest.API.csproj" />
+    <Project Path="src/ShopNest.Application/ShopNest.Application.csproj" />
+    <Project Path="src/ShopNest.Domain/ShopNest.Domain.csproj" />
+    <Project Path="src/ShopNest.Infrastructure/ShopNest.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ShopNest.IntegrationTests/ShopNest.IntegrationTests.csproj" />
+    <Project Path="tests/ShopNest.UnitTests/ShopNest.UnitTests.csproj" />
+  </Folder>
+</Solution>
