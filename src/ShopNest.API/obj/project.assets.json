@@ -1039,6 +1039,22 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Serilog.Enrichers.Environment/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "4.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Serilog.Enrichers.Environment.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.Enrichers.Environment.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Serilog.Extensions.Hosting/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -1452,6 +1468,7 @@
           "FluentValidation": "12.1.1",
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
           "MediatR": "14.1.0",
+          "Microsoft.EntityFrameworkCore": "10.0.8",
           "ShopNest.Domain": "1.0.0"
         },
         "compile": {
@@ -1476,6 +1493,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "AutoMapper": "16.1.1",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.8",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.8",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "10.0.8",
@@ -1493,7 +1511,10 @@
         },
         "runtime": {
           "bin/placeholder/ShopNest.Infrastructure.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -3461,6 +3482,29 @@
         "serilog.aspnetcore.nuspec"
       ]
     },
+    "Serilog.Enrichers.Environment/3.0.1": {
+      "sha512": "9BqCE4C9FF+/rJb/CsQwe7oVf44xqkOvMwX//CUxvUR25lFL4tSS6iuxE5eW07quby1BAyAEP+vM6TWsnT3iqw==",
+      "type": "package",
+      "path": "serilog.enrichers.environment/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Serilog.Enrichers.Environment.dll",
+        "lib/net462/Serilog.Enrichers.Environment.xml",
+        "lib/net471/Serilog.Enrichers.Environment.dll",
+        "lib/net471/Serilog.Enrichers.Environment.xml",
+        "lib/net6.0/Serilog.Enrichers.Environment.dll",
+        "lib/net6.0/Serilog.Enrichers.Environment.xml",
+        "lib/net8.0/Serilog.Enrichers.Environment.dll",
+        "lib/net8.0/Serilog.Enrichers.Environment.xml",
+        "lib/netstandard2.0/Serilog.Enrichers.Environment.dll",
+        "lib/netstandard2.0/Serilog.Enrichers.Environment.xml",
+        "serilog-enricher-nuget.png",
+        "serilog.enrichers.environment.3.0.1.nupkg.sha512",
+        "serilog.enrichers.environment.nuspec"
+      ]
+    },
     "Serilog.Extensions.Hosting/10.0.0": {
       "sha512": "E7juuIc+gzoGxgzFooFgAV8g9BfiSXNKsUok9NmEpyAXg2odkcPsMa/Yo4axkJRlh0se7mkYQ1GXDaBemR+b6w==",
       "type": "package",
@@ -4098,6 +4142,7 @@
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 10.0.8",
       "Scalar.AspNetCore >= 2.14.14",
       "Serilog.AspNetCore >= 10.0.0",
+      "Serilog.Enrichers.Environment >= 3.0.1",
       "ShopNest.Application >= 1.0.0",
       "ShopNest.Infrastructure >= 1.0.0"
     ]
@@ -4177,6 +4222,10 @@
           "Serilog.AspNetCore": {
             "target": "Package",
             "version": "[10.0.0, )"
+          },
+          "Serilog.Enrichers.Environment": {
+            "target": "Package",
+            "version": "[3.0.1, )"
           }
         },
         "imports": [

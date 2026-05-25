@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tx5SI6rE5UA=",
+  "dgSpecHash": "58WyW9+Qlww=",
   "success": true,
   "projectFilePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/ShopNest.API.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "/Users/ositrade/.nuget/packages/sendgrid/9.29.3/sendgrid.9.29.3.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/serilog/4.3.0/serilog.4.3.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/serilog.aspnetcore/10.0.0/serilog.aspnetcore.10.0.0.nupkg.sha512",
+    "/Users/ositrade/.nuget/packages/serilog.enrichers.environment/3.0.1/serilog.enrichers.environment.3.0.1.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/serilog.extensions.hosting/10.0.0/serilog.extensions.hosting.10.0.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/serilog.extensions.logging/10.0.0/serilog.extensions.logging.10.0.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/serilog.formatting.compact/3.0.0/serilog.formatting.compact.3.0.0.nupkg.sha512",

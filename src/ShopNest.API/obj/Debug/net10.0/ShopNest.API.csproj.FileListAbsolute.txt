@@ -171,6 +171,7 @@
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.csproj.CoreCompileInputs.cache
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.MvcApplicationPartsAssemblyInfo.cs
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.MvcApplicationPartsAssemblyInfo.cache
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.sourcelink.json
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/rjimswa.dswa.cache.json
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
@@ -186,3 +187,4 @@
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.pdb
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.genruntimeconfig.cache
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ref/ShopNest.API.dll
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.Enrichers.Environment.dll

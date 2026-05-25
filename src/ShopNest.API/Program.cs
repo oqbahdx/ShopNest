@@ -1,77 +1,77 @@
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Scalar.AspNetCore;
+using ShopNest.API.Middleware;
+using ShopNest.Application;
+using ShopNest.Application.Common.Identity;
+using ShopNest.Infrastructure;
+using ShopNest.Infrastructure.Identity;
+using ShopNest.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+// ── Serilog ───────────────────────────────────────────────────────────────────
+builder.Host.UseSerilog((ctx, cfg) =>
+    cfg.ReadFrom.Configuration(ctx.Configuration)
+       .Enrich.FromLogContext()
+       .Enrich.WithMachineName()
+       .WriteTo.Console(outputTemplate:
+           "[{Timestamp:HH:mm:ss} {Level:u3}] {SourceContext}: {Message:lj}{NewLine}{Exception}")
+       .WriteTo.File("logs/shopnest-.log",
+           rollingInterval: RollingInterval.Day,
+           retainedFileCountLimit: 30));
+
+// ── Application services ──────────────────────────────────────────────────────
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
-var jwtSection = builder.Configuration.GetSection("Jwt");
-var jwtKey = jwtSection["Key"] ?? throw new InvalidOperationException("Jwt:Key is not configured.");
 
-builder.Services
-    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = jwtSection["Issuer"],
-            ValidAudience = jwtSection["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
-        };
-    });
 
-builder.Services.AddAuthorization();
-
-builder.Services.AddStackExchangeRedisCache(options =>
-{
-    options.Configuration = builder.Configuration["Redis:ConnectionString"];
-    options.InstanceName = builder.Configuration["Redis:InstanceName"];
-});
+// ── CORS (adjust origins for production) ─────────────────────────────────────
+builder.Services.AddCors(opts =>
+    opts.AddPolicy("AllowFrontend", p =>
+        p.WithOrigins("http://localhost:3000", "https://app.shopnest.com")
+         .AllowAnyMethod()
+         .AllowAnyHeader()
+         .AllowCredentials()));  // AllowCredentials needed for HttpOnly cookie
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ── Seed roles on startup ─────────────────────────────────────────────────────
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider
+        .GetRequiredService<RoleManager<IdentityRole<Guid>>>();
+    var logger = scope.ServiceProvider
+        .GetRequiredService<ILogger<Program>>();
+    await RoleSeeder.SeedAsync(roleManager, logger);
+}
+
+// ── Middleware pipeline ───────────────────────────────────────────────────────
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseSerilogRequestLogging();
+
+
+
+app.UseHttpsRedirection();
+app.UseCors("AllowFrontend");
+app.UseAuthentication();
+app.UseAuthorization();
+
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
     app.MapScalarApiReference();
-    app.MapGet("/", () => Results.Redirect("/scalar/v1"));
 }
 
-app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseAuthorization();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+app.MapControllers();
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+// Required for WebApplicationFactory in integration tests
+public partial class Program { }

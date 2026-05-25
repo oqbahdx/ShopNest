@@ -11,6 +11,7 @@
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/obj/Debug/net10.0/ShopNest.Infrastructure.AssemblyInfoInputs.cache
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/obj/Debug/net10.0/ShopNest.Infrastructure.AssemblyInfo.cs
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/obj/Debug/net10.0/ShopNest.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/obj/Debug/net10.0/ShopNest.Infrastructure.sourcelink.json
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/obj/Debug/net10.0/ShopNest.F7B0B013.Up2Date
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/obj/Debug/net10.0/ShopNest.Infrastructure.dll
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/obj/Debug/net10.0/refint/ShopNest.Infrastructure.dll
