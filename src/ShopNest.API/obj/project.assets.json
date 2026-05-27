@@ -1476,7 +1476,10 @@
         },
         "runtime": {
           "bin/placeholder/ShopNest.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "ShopNest.Domain/1.0.0": {
         "type": "project",
