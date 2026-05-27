@@ -1,13 +1,10 @@
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
 using Serilog;
 using Scalar.AspNetCore;
 using ShopNest.API.Middleware;
 using ShopNest.Application;
-using ShopNest.Application.Common.Identity;
 using ShopNest.Infrastructure;
 using ShopNest.Infrastructure.Identity;
-using ShopNest.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +22,11 @@ builder.Host.UseSerilog((ctx, cfg) =>
 // ── Application services ──────────────────────────────────────────────────────
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddCatalogInfrastructure();
+builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(o =>
+{
+    o.MultipartBodyLengthLimit = 100 * 1024 * 1024; // 100 MB total
+});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -60,6 +62,7 @@ app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
+app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 

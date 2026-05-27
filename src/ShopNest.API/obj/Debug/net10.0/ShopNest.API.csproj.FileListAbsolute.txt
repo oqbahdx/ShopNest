@@ -52,6 +52,7 @@
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/SendGrid.dll
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.dll
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.AspNetCore.dll
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.Enrichers.Environment.dll
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.Extensions.Hosting.dll
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.Extensions.Logging.dll
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.Formatting.Compact.dll
@@ -187,4 +188,3 @@
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.pdb
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ShopNest.API.genruntimeconfig.cache
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/obj/Debug/net10.0/ref/ShopNest.API.dll
-/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/bin/Debug/net10.0/Serilog.Enrichers.Environment.dll
