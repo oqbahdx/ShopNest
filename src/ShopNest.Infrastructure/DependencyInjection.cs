@@ -111,6 +111,7 @@ public static class DependencyInjection
         // ── Application services ──────────────────────────────────────────────
         services.AddScoped<IJwtService,          JwtService>();
         services.AddScoped<IEmailService,        EmailService>();
+        services.AddScoped<IFileService,         LocalFileService>();
         services.AddScoped<ICurrentUserService,  CurrentUserService>();
         services.AddHttpContextAccessor();
 
