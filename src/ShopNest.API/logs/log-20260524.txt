@@ -1,0 +1,606 @@
+2026-05-24 21:51:26.201 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-05-24 21:51:26.408 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-24 21:51:26.409 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-24 21:51:26.409 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-24 21:51:26.410 +03:00 [INF] Hosting environment: Development
+2026-05-24 21:51:26.410 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-24 21:51:26.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-24 21:51:26.932 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 404 0 null 11.3637ms
+2026-05-24 21:51:26.936 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7240/scalar/v1, Response status code: 404
+2026-05-24 23:18:42.529 +03:00 [INF] Application is shutting down...
+ery filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:52:29.095 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:52:29.095 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:52:29.095 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:52:32.747 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:52:32.770 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:52:32.770 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:52:32.770 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:46.113 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:46.139 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:46.139 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:46.141 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:49.215 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:49.238 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:49.238 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:53:49.238 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:55:17.447 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:55:17.472 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:55:17.472 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:55:17.472 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:56:26.339 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:56:26.361 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:56:26.361 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:56:26.361 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 21:56:26.892 +03:00 [INF] Executed DbCommand (196ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [ShopNest];
+2026-05-24 21:56:27.002 +03:00 [INF] Executed DbCommand (108ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ShopNest] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2026-05-24 21:56:27.027 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-24 21:56:27.029 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-05-24 21:56:27.053 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-05-24 21:56:27.088 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-05-24 21:56:27.097 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-24 21:56:27.098 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-24 21:56:27.138 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-24 21:56:27.143 +03:00 [INF] Applying migration '20260524185229_InitialCreate'.
+2026-05-24 21:56:27.196 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(150) NOT NULL,
+    [Slug] nvarchar(180) NOT NULL,
+    [Description] nvarchar(1000) NULL,
+    [ImageUrl] nvarchar(500) NULL,
+    [DisplayOrder] int NOT NULL,
+    [IsActive] bit NOT NULL,
+    [ParentCategoryId] uniqueidentifier NULL,
+    [IsDeleted] bit NOT NULL,
+    [DeletedAt] datetime2 NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Categories_Categories_ParentCategoryId] FOREIGN KEY ([ParentCategoryId]) REFERENCES [Categories] ([Id]) ON DELETE NO ACTION
+);
+2026-05-24 21:56:27.198 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Coupons] (
+    [Id] uniqueidentifier NOT NULL,
+    [Code] nvarchar(50) NOT NULL,
+    [Description] nvarchar(300) NULL,
+    [DiscountType] int NOT NULL,
+    [DiscountValue] decimal(18,2) NOT NULL,
+    [MinimumOrderAmount] decimal(18,2) NOT NULL,
+    [MaximumDiscountAmount] decimal(18,2) NULL,
+    [UsageLimit] int NULL,
+    [UsedCount] int NOT NULL,
+    [IsOnePerUser] bit NOT NULL,
+    [IsActive] bit NOT NULL,
+    [ExpiresAt] datetime2 NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Coupons] PRIMARY KEY ([Id])
+);
+2026-05-24 21:56:27.202 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Roles] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_Roles] PRIMARY KEY ([Id])
+);
+2026-05-24 21:56:27.205 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] uniqueidentifier NOT NULL,
+    [FirstName] nvarchar(100) NOT NULL,
+    [LastName] nvarchar(100) NOT NULL,
+    [AvatarUrl] nvarchar(500) NULL,
+    [IsActive] bit NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2026-05-24 21:56:27.207 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(200) NOT NULL,
+    [Slug] nvarchar(250) NOT NULL,
+    [Description] nvarchar(max) NULL,
+    [ShortDescription] nvarchar(500) NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [CompareAtPrice] decimal(18,2) NULL,
+    [CostPrice] decimal(18,2) NULL,
+    [StockQuantity] int NOT NULL,
+    [LowStockThreshold] int NOT NULL,
+    [SKU] nvarchar(100) NOT NULL,
+    [Barcode] nvarchar(100) NULL,
+    [Weight] decimal(10,3) NULL,
+    [CategoryId] uniqueidentifier NOT NULL,
+    [IsFeatured] bit NOT NULL,
+    [IsActive] bit NOT NULL,
+    [AverageRating] decimal(3,2) NOT NULL,
+    [ReviewCount] int NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    [DeletedAt] datetime2 NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Products_Categories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [Categories] ([Id]) ON DELETE NO ACTION
+);
+2026-05-24 21:56:27.212 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [RoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_RoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_RoleClaims_Roles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [Roles] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.215 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Addresses] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [FullName] nvarchar(150) NOT NULL,
+    [Phone] nvarchar(30) NOT NULL,
+    [Street] nvarchar(250) NOT NULL,
+    [City] nvarchar(100) NOT NULL,
+    [State] nvarchar(100) NOT NULL,
+    [PostalCode] nvarchar(20) NOT NULL,
+    [Country] nvarchar(100) NOT NULL,
+    [IsDefault] bit NOT NULL,
+    [IsDeleted] bit NOT NULL,
+    [DeletedAt] datetime2 NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Addresses] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Addresses_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.218 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Carts] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [CouponId] uniqueidentifier NULL,
+    [SubTotal] decimal(18,2) NOT NULL,
+    [DiscountAmount] decimal(18,2) NOT NULL,
+    [ShippingCost] decimal(18,2) NOT NULL,
+    [Total] decimal(18,2) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Carts] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Carts_Coupons_CouponId] FOREIGN KEY ([CouponId]) REFERENCES [Coupons] ([Id]) ON DELETE SET NULL,
+    CONSTRAINT [FK_Carts_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.222 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Notifications] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [Title] nvarchar(200) NOT NULL,
+    [Message] nvarchar(1000) NOT NULL,
+    [Type] int NOT NULL,
+    [IsRead] bit NOT NULL,
+    [ReadAt] datetime2 NULL,
+    [Data] nvarchar(max) NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_Notifications] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Notifications_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.225 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [RefreshTokens] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [TokenHash] nvarchar(512) NOT NULL,
+    [ExpiresAt] datetime2 NOT NULL,
+    [IsRevoked] bit NOT NULL,
+    [RevokedAt] datetime2 NULL,
+    [RevokedByIp] nvarchar(50) NULL,
+    [ReplacedByToken] nvarchar(512) NULL,
+    [CreatedByIp] nvarchar(50) NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_RefreshTokens] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_RefreshTokens_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.228 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] uniqueidentifier NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_UserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_UserClaims_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.232 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_UserLogins_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.235 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserRoles] (
+    [UserId] uniqueidentifier NOT NULL,
+    [RoleId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_UserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_UserRoles_Roles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [Roles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_UserRoles_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.238 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserTokens] (
+    [UserId] uniqueidentifier NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_UserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_UserTokens_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.240 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ProductImages] (
+    [Id] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [ImageUrl] nvarchar(500) NOT NULL,
+    [ThumbnailUrl] nvarchar(500) NULL,
+    [AltText] nvarchar(250) NULL,
+    [DisplayOrder] int NOT NULL,
+    [IsPrimary] bit NOT NULL,
+    CONSTRAINT [PK_ProductImages] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ProductImages_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.243 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Reviews] (
+    [Id] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [Rating] int NOT NULL,
+    [Title] nvarchar(200) NULL,
+    [Comment] nvarchar(2000) NULL,
+    [Status] int NOT NULL,
+    [IsVerifiedPurchase] bit NOT NULL,
+    [AdminNote] nvarchar(500) NULL,
+    [ApprovedAt] datetime2 NULL,
+    [ApprovedBy] uniqueidentifier NULL,
+    [IsDeleted] bit NOT NULL,
+    [DeletedAt] datetime2 NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Reviews] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Reviews_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Reviews_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE NO ACTION
+);
+2026-05-24 21:56:27.248 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Orders] (
+    [Id] uniqueidentifier NOT NULL,
+    [OrderNumber] nvarchar(50) NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [Status] int NOT NULL,
+    [SubTotal] decimal(18,2) NOT NULL,
+    [DiscountAmount] decimal(18,2) NOT NULL,
+    [ShippingCost] decimal(18,2) NOT NULL,
+    [TaxAmount] decimal(18,2) NOT NULL,
+    [TotalAmount] decimal(18,2) NOT NULL,
+    [ShippingAddressId] uniqueidentifier NOT NULL,
+    [CouponId] uniqueidentifier NULL,
+    [TrackingNumber] nvarchar(100) NULL,
+    [Notes] nvarchar(500) NULL,
+    [CancelReason] nvarchar(500) NULL,
+    [CancelledAt] datetime2 NULL,
+    [ShippedAt] datetime2 NULL,
+    [DeliveredAt] datetime2 NULL,
+    [IsDeleted] bit NOT NULL,
+    [DeletedAt] datetime2 NULL,
+    [DeletedBy] uniqueidentifier NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Orders] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Orders_Addresses_ShippingAddressId] FOREIGN KEY ([ShippingAddressId]) REFERENCES [Addresses] ([Id]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_Orders_Coupons_CouponId] FOREIGN KEY ([CouponId]) REFERENCES [Coupons] ([Id]) ON DELETE SET NULL,
+    CONSTRAINT [FK_Orders_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE NO ACTION
+);
+2026-05-24 21:56:27.250 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CartItems] (
+    [Id] uniqueidentifier NOT NULL,
+    [CartId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [Quantity] int NOT NULL,
+    [UnitPrice] decimal(18,2) NOT NULL,
+    [TotalPrice] decimal(18,2) NOT NULL,
+    CONSTRAINT [PK_CartItems] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_CartItems_Carts_CartId] FOREIGN KEY ([CartId]) REFERENCES [Carts] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_CartItems_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE NO ACTION
+);
+2026-05-24 21:56:27.254 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [OrderItems] (
+    [Id] uniqueidentifier NOT NULL,
+    [OrderId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [ProductName] nvarchar(200) NOT NULL,
+    [ProductImageUrl] nvarchar(500) NULL,
+    [ProductSKU] nvarchar(100) NOT NULL,
+    [UnitPrice] decimal(18,2) NOT NULL,
+    [Quantity] int NOT NULL,
+    [TotalPrice] decimal(18,2) NOT NULL,
+    CONSTRAINT [PK_OrderItems] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_OrderItems_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_OrderItems_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE NO ACTION
+);
+2026-05-24 21:56:27.257 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Payments] (
+    [Id] uniqueidentifier NOT NULL,
+    [OrderId] uniqueidentifier NOT NULL,
+    [Amount] decimal(18,2) NOT NULL,
+    [Status] int NOT NULL,
+    [Method] int NOT NULL,
+    [StripePaymentIntentId] nvarchar(200) NULL,
+    [StripeChargeId] nvarchar(200) NULL,
+    [StripeCustomerId] nvarchar(200) NULL,
+    [FailureReason] nvarchar(500) NULL,
+    [PaidAt] datetime2 NULL,
+    [RefundedAmount] decimal(18,2) NOT NULL,
+    [RefundedAt] datetime2 NULL,
+    [RefundReason] nvarchar(500) NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Payments] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Payments_Orders_OrderId] FOREIGN KEY ([OrderId]) REFERENCES [Orders] ([Id]) ON DELETE CASCADE
+);
+2026-05-24 21:56:27.260 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Addresses_UserId] ON [Addresses] ([UserId]);
+2026-05-24 21:56:27.262 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_CartItems_CartId_ProductId] ON [CartItems] ([CartId], [ProductId]);
+2026-05-24 21:56:27.264 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CartItems_ProductId] ON [CartItems] ([ProductId]);
+2026-05-24 21:56:27.265 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Carts_CouponId] ON [Carts] ([CouponId]);
+2026-05-24 21:56:27.267 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Carts_UserId] ON [Carts] ([UserId]);
+2026-05-24 21:56:27.269 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Categories_IsActive] ON [Categories] ([IsActive]);
+2026-05-24 21:56:27.271 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Categories_ParentCategoryId] ON [Categories] ([ParentCategoryId]);
+2026-05-24 21:56:27.273 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Categories_Slug] ON [Categories] ([Slug]);
+2026-05-24 21:56:27.275 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Coupons_Code] ON [Coupons] ([Code]);
+2026-05-24 21:56:27.277 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Coupons_ExpiresAt] ON [Coupons] ([ExpiresAt]);
+2026-05-24 21:56:27.279 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Coupons_IsActive] ON [Coupons] ([IsActive]);
+2026-05-24 21:56:27.281 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Notifications_CreatedAt] ON [Notifications] ([CreatedAt]);
+2026-05-24 21:56:27.282 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Notifications_UserId] ON [Notifications] ([UserId]);
+2026-05-24 21:56:27.284 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Notifications_UserId_IsRead] ON [Notifications] ([UserId], [IsRead]);
+2026-05-24 21:56:27.286 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_OrderItems_OrderId] ON [OrderItems] ([OrderId]);
+2026-05-24 21:56:27.288 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_OrderItems_ProductId] ON [OrderItems] ([ProductId]);
+2026-05-24 21:56:27.290 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_CouponId] ON [Orders] ([CouponId]);
+2026-05-24 21:56:27.291 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_CreatedAt] ON [Orders] ([CreatedAt]);
+2026-05-24 21:56:27.293 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Orders_OrderNumber] ON [Orders] ([OrderNumber]);
+2026-05-24 21:56:27.295 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_ShippingAddressId] ON [Orders] ([ShippingAddressId]);
+2026-05-24 21:56:27.297 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_Status] ON [Orders] ([Status]);
+2026-05-24 21:56:27.298 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Orders_UserId] ON [Orders] ([UserId]);
+2026-05-24 21:56:27.300 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Payments_OrderId] ON [Payments] ([OrderId]);
+2026-05-24 21:56:27.302 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Payments_StripePaymentIntentId] ON [Payments] ([StripePaymentIntentId]);
+2026-05-24 21:56:27.304 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ProductImages_ProductId_DisplayOrder] ON [ProductImages] ([ProductId], [DisplayOrder]);
+2026-05-24 21:56:27.305 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_CategoryId] ON [Products] ([CategoryId]);
+2026-05-24 21:56:27.307 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Products_IsActive_IsDeleted_CreatedAt] ON [Products] ([IsActive], [IsDeleted], [CreatedAt]);
+2026-05-24 21:56:27.309 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Products_SKU] ON [Products] ([SKU]);
+2026-05-24 21:56:27.311 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Products_Slug] ON [Products] ([Slug]);
+2026-05-24 21:56:27.313 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_RefreshTokens_ExpiresAt] ON [RefreshTokens] ([ExpiresAt]);
+2026-05-24 21:56:27.314 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_RefreshTokens_TokenHash] ON [RefreshTokens] ([TokenHash]);
+2026-05-24 21:56:27.316 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_RefreshTokens_UserId] ON [RefreshTokens] ([UserId]);
+2026-05-24 21:56:27.318 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Reviews_ProductId] ON [Reviews] ([ProductId]);
+2026-05-24 21:56:27.320 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Reviews_Status] ON [Reviews] ([Status]);
+2026-05-24 21:56:27.321 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Reviews_UserId_ProductId] ON [Reviews] ([UserId], [ProductId]);
+2026-05-24 21:56:27.323 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_RoleClaims_RoleId] ON [RoleClaims] ([RoleId]);
+2026-05-24 21:56:27.330 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [Roles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2026-05-24 21:56:27.332 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserClaims_UserId] ON [UserClaims] ([UserId]);
+2026-05-24 21:56:27.334 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserLogins_UserId] ON [UserLogins] ([UserId]);
+2026-05-24 21:56:27.336 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserRoles_RoleId] ON [UserRoles] ([RoleId]);
+2026-05-24 21:56:27.338 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [Users] ([NormalizedEmail]);
+2026-05-24 21:56:27.340 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Users_Email] ON [Users] ([Email]) WHERE [Email] IS NOT NULL;
+2026-05-24 21:56:27.342 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [Users] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2026-05-24 21:56:27.361 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260524185229_InitialCreate', N'10.0.8');
+2026-05-24 21:56:27.369 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-05-24 22:09:45.220 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:45.244 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:45.244 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:45.245 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:48.523 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:48.546 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:48.546 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:48.546 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-24 22:09:48.815 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-24 22:09:48.820 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-05-24 22:09:48.837 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-05-24 22:09:48.874 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-05-24 22:09:48.881 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-24 22:09:48.884 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-24 22:09:48.891 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-24 22:09:48.895 +03:00 [INF] No migrations were applied. The database is already up to date.
+2026-05-24 22:09:48.899 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-05-24 23:18:46.489 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-05-24 23:18:46.674 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-24 23:18:46.675 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-24 23:18:46.676 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-24 23:18:46.676 +03:00 [INF] Hosting environment: Development
+2026-05-24 23:18:46.676 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-24 23:18:47.228 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-24 23:18:47.239 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 404 0 null 11.7932ms
+2026-05-24 23:18:47.241 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7240/scalar/v1, Response status code: 404
+2026-05-24 23:19:09.908 +03:00 [INF] Application is shutting down...
+2026-05-24 23:19:12.656 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-05-24 23:19:12.805 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-24 23:19:12.806 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-24 23:19:12.807 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-24 23:19:12.807 +03:00 [INF] Hosting environment: Development
+2026-05-24 23:19:12.807 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-24 23:19:13.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-24 23:19:13.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 404 0 null 9.193ms
+2026-05-24 23:19:13.381 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7240/scalar/v1, Response status code: 404
+2026-05-24 23:21:14.905 +03:00 [INF] Application is shutting down...
+s may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-05-24 23:20:40.264 +03:00 [INF] Now listening on: http://localhost:5199
+2026-05-24 23:20:40.265 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-24 23:20:40.265 +03:00 [INF] Hosting environment: Production
+2026-05-24 23:20:40.265 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-24 23:20:44.993 +03:00 [INF] Request starting HTTP/1.1 HEAD http://localhost:5199/openapi/v1.json - null null
+2026-05-24 23:20:44.993 +03:00 [INF] Request starting HTTP/1.1 HEAD http://localhost:5199/scalar/v1 - null null
+2026-05-24 23:20:44.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/scalar/v1 - null null
+2026-05-24 23:20:45.003 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-05-24 23:20:45.008 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-05-24 23:20:45.008 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-05-24 23:20:45.008 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-05-24 23:20:45.008 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-05-24 23:20:45.008 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-24 23:20:45.012 +03:00 [INF] Request finished HTTP/1.1 HEAD http://localhost:5199/openapi/v1.json - 405 null null 20.8152ms
+2026-05-24 23:20:45.013 +03:00 [INF] Request finished HTTP/1.1 HEAD http://localhost:5199/scalar/v1 - 405 null null 20.7824ms
+2026-05-24 23:20:45.076 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-24 23:20:45.076 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-24 23:20:45.076 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/scalar/v1 - 200 624 text/html 84.6707ms
+2026-05-24 23:20:50.564 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/openapi/v1.json - null null
+2026-05-24 23:20:50.564 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/scalar/v1 - null null
+2026-05-24 23:20:50.565 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-24 23:20:50.565 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-24 23:20:50.566 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-24 23:20:50.566 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-24 23:20:50.566 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/scalar/v1 - 200 624 text/html 2.4124ms
+2026-05-24 23:20:50.579 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-24 23:20:50.579 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/openapi/v1.json - 200 null application/json;charset=utf-8 15.0348ms
+2026-05-24 23:20:50.592 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/openapi/v1.json - null null
+2026-05-24 23:20:50.592 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-24 23:20:50.592 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-24 23:20:50.592 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/openapi/v1.json - 200 null application/json;charset=utf-8 0.8212ms
+2026-05-24 23:20:53.217 +03:00 [INF] Application is shutting down...
+2026-05-24 23:21:17.842 +03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-05-24 23:21:18.045 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-24 23:21:18.046 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-24 23:21:18.046 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-24 23:21:18.046 +03:00 [INF] Hosting environment: Development
+2026-05-24 23:21:18.046 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-24 23:21:18.582 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-24 23:21:18.598 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-24 23:21:18.719 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-24 23:21:18.720 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-24 23:21:18.721 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 140.3872ms
+2026-05-24 23:21:18.738 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-24 23:21:18.738 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-24 23:21:18.741 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-24 23:21:18.741 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-24 23:21:18.749 +03:00 [INF] Sending file with download name ''.
+2026-05-24 23:21:18.749 +03:00 [INF] Sending file with download name ''.
+2026-05-24 23:21:18.751 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-24 23:21:18.751 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 12.4057ms
+2026-05-24 23:21:18.781 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-24 23:21:18.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 44.4494ms
+2026-05-24 23:21:18.951 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-24 23:21:18.953 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-24 23:21:18.971 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-24 23:21:18.972 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 20.441ms
+2026-05-24 23:49:55.946 +03:00 [INF] Application is shutting down...
