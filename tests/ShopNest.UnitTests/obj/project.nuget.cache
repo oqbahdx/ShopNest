@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sdEEfo6cqyQ=",
+  "dgSpecHash": "pF5KjZkCq50=",
   "success": true,
   "projectFilePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/tests/ShopNest.UnitTests/ShopNest.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -19,8 +19,10 @@
     "/Users/ositrade/.nuget/packages/microsoft.extensions.caching.abstractions/10.0.8/microsoft.extensions.caching.abstractions.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.extensions.caching.memory/10.0.8/microsoft.extensions.caching.memory.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.8/microsoft.extensions.dependencyinjection.10.0.8.nupkg.sha512",
+    "/Users/ositrade/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.8/microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.extensions.logging/10.0.8/microsoft.extensions.logging.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.8/microsoft.extensions.logging.abstractions.10.0.8.nupkg.sha512",
+    "/Users/ositrade/.nuget/packages/microsoft.extensions.options/10.0.8/microsoft.extensions.options.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.extensions.primitives/10.0.8/microsoft.extensions.primitives.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",

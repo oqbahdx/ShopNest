@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sxgvknWVLDc=",
+  "dgSpecHash": "Aqtz2ap4Cdw=",
   "success": true,
   "projectFilePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Application/ShopNest.Application.csproj",
   "expectedPackageFiles": [
@@ -12,50 +12,10 @@
     "/Users/ositrade/.nuget/packages/microsoft.entityframeworkcore/10.0.8/microsoft.entityframeworkcore.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.8/microsoft.entityframeworkcore.abstractions.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.8/microsoft.entityframeworkcore.analyzers.10.0.8.nupkg.sha512",
-    "/Users/ositrade/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.8/microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512",
-    "/Users/ositrade/.nuget/packages/microsoft.extensions.identity.stores/10.0.8/microsoft.extensions.identity.stores.10.0.8.nupkg.sha512",
-    "/Users/ositrade/.nuget/packages/microsoft.extensions.options/10.0.8/microsoft.extensions.options.10.0.8.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1510",
-      "level": "Warning",
-      "message": "PackageReference Microsoft.Extensions.DependencyInjection.Abstractions will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Application/ShopNest.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Application/ShopNest.Application.csproj",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1510",
-      "level": "Warning",
-      "message": "PackageReference Microsoft.Extensions.Identity.Stores will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Application/ShopNest.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Application/ShopNest.Application.csproj",
-      "libraryId": "Microsoft.Extensions.Identity.Stores",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1510",
-      "level": "Warning",
-      "message": "PackageReference Microsoft.Extensions.Options will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Application/ShopNest.Application.csproj",
-      "warningLevel": 1,
-      "filePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Application/ShopNest.Application.csproj",
-      "libraryId": "Microsoft.Extensions.Options",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }
