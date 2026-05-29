@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http;
+
 namespace ShopNest.Application.Common.Interfaces;
 
 public interface IFileService
@@ -11,7 +13,3 @@ public interface IFileService
         string container,
         CancellationToken ct = default);
 }
-public record FileUploadResult(
-    string Url,
-    string FileName,
-    long SizeInBytes);

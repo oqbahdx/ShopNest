@@ -1,4 +1,5 @@
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using ShopNest.Application.Common.Models;
 
 namespace ShopNest.Application.Features.Products.Commands.UploadProductImages;
