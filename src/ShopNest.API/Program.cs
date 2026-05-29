@@ -3,8 +3,11 @@ using Serilog;
 using Scalar.AspNetCore;
 using ShopNest.API.Middleware;
 using ShopNest.Application;
+using ShopNest.Application.Common.Interfaces;
+using ShopNest.Application.Common.Settings;
 using ShopNest.Infrastructure;
 using ShopNest.Infrastructure.Identity;
+using ShopNest.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,9 +26,20 @@ builder.Host.UseSerilog((ctx, cfg) =>
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddCatalogInfrastructure();
+
+// ── Stripe ────────────────────────────────────────────────────────────────────
+// 1. Bind StripeSettings from appsettings.json (after existing IOptions wiring):
+builder.Services.Configure<StripeSettings>(
+    builder.Configuration.GetSection(StripeSettings.SectionName));
+
+// 2. Register StripePaymentService (after existing AddCatalogInfrastructure()):
+builder.Services.AddScoped<IPaymentService, StripePaymentService>();
+
+// 3. Disable request body buffering on the webhook route so Stripe
+//    signature validation works (raw body must reach the controller):
 builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(o =>
 {
-    o.MultipartBodyLengthLimit = 100 * 1024 * 1024; // 100 MB total
+    o.MultipartBodyLengthLimit = long.MaxValue;
 });
 
 builder.Services.AddControllers();

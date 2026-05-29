@@ -33,6 +33,6 @@ public static class OrderMapper
             LineTotal: i.UnitPrice * i.Quantity
         )).ToList(),
         CreatedAt: o.CreatedAt,
-        UpdatedAt: o.UpdatedAt ?? o.CreatedAt
+        UpdatedAt: o.UpdatedAt == default ? o.CreatedAt : o.UpdatedAt
     );
 }
