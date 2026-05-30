@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopNest.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3267413dc0306601080eb87184a7d3a94a2f41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f93371cb3830215f67958fe644ea25a2a2208531")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopNest.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopNest.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
