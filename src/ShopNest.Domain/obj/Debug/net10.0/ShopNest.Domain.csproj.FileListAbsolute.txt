@@ -10,3 +10,4 @@
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Domain/obj/Debug/net10.0/refint/ShopNest.Domain.dll
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Domain/obj/Debug/net10.0/ShopNest.Domain.pdb
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Domain/obj/Debug/net10.0/ref/ShopNest.Domain.dll
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Domain/obj/Debug/net10.0/ShopNest.Domain.csproj.AssemblyReference.cache

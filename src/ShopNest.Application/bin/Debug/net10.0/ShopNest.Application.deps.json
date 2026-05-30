@@ -130,6 +130,9 @@
         }
       },
       "ShopNest.Domain/1.0.0": {
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1"
+        },
         "runtime": {
           "ShopNest.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
