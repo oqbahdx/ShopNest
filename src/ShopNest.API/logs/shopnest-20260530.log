@@ -1,0 +1,457 @@
+2026-05-30 15:12:19.765 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 15:12:20.275 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:12:20.277 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:12:20.277 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:12:20.277 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:12:20.277 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:12:20.797 +03:00 [INF] Executed DbCommand (83ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 15:12:20.867 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 15:12:20.870 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 15:12:20.872 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 15:12:20.931 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-30 15:12:20.970 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-30 15:12:21.171 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-30 15:12:21.171 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-30 15:12:21.172 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 15:12:21.172 +03:00 [INF] Hosting environment: Development
+2026-05-30 15:12:21.172 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-30 15:12:21.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-30 15:12:21.635 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 15:12:21.745 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-30 15:12:21.746 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 15:12:21.747 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 145.8614 ms
+2026-05-30 15:12:21.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 170.3161ms
+2026-05-30 15:12:21.784 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-30 15:12:21.785 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-30 15:12:21.787 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 15:12:21.787 +03:00 [INF] CORS policy execution failed.
+2026-05-30 15:12:21.787 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 15:12:21.788 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 15:12:21.791 +03:00 [INF] Sending file with download name ''.
+2026-05-30 15:12:21.791 +03:00 [INF] Sending file with download name ''.
+2026-05-30 15:12:21.793 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 15:12:21.793 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.2311 ms
+2026-05-30 15:12:21.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 9.6309ms
+2026-05-30 15:12:21.825 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 15:12:21.826 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 40.3291 ms
+2026-05-30 15:12:21.828 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 42.8952ms
+2026-05-30 15:12:22.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-30 15:12:22.029 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 15:12:22.205 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 15:12:22.205 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 179.3026 ms
+2026-05-30 15:12:22.205 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 180.3243ms
+2026-05-30 17:37:47.589 +03:00 [INF] Application is shutting down...
+key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 15:15:47.012 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:15:47.013 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:15:47.013 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:15:47.013 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:15:47.013 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:16:31.739 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 15:16:32.142 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:16:32.144 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:16:32.144 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:16:32.144 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:16:32.144 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:25.164 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 15:17:25.527 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:25.528 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:25.528 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:25.528 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:25.528 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:26.036 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-30 15:17:26.056 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-30 15:17:26.069 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-30 15:17:51.534 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 15:17:51.926 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:51.927 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:51.927 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:51.927 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:17:51.927 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:18:14.943 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 15:18:15.331 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:18:15.332 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:18:15.332 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:18:15.332 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 15:18:15.332 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 17:14:08.315 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 17:14:08.638 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 17:14:08.639 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 17:14:08.639 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 17:14:08.639 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 17:14:08.639 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 17:14:08.891 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-30 17:14:08.896 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-05-30 17:14:08.921 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2026-05-30 17:14:08.955 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2026-05-30 17:14:08.961 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-30 17:14:08.962 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-30 17:14:08.970 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-30 17:14:08.974 +03:00 [INF] Applying migration '20260530121752_AddWishlist'.
+2026-05-30 17:14:09.077 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var nvarchar(max);
+SELECT @var = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Reviews]') AND [c].[name] = N'UpdatedAt');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [Reviews] DROP CONSTRAINT ' + @var + ';');
+UPDATE [Reviews] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Reviews] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Reviews] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.101 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var1 nvarchar(max);
+SELECT @var1 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Products]') AND [c].[name] = N'UpdatedAt');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Products] DROP CONSTRAINT ' + @var1 + ';');
+UPDATE [Products] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Products] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Products] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.123 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var2 nvarchar(max);
+SELECT @var2 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Payments]') AND [c].[name] = N'UpdatedAt');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [Payments] DROP CONSTRAINT ' + @var2 + ';');
+UPDATE [Payments] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Payments] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Payments] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.130 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Payments] ADD [Currency] nvarchar(max) NOT NULL DEFAULT N'';
+2026-05-30 17:14:09.154 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var3 nvarchar(max);
+SELECT @var3 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Orders]') AND [c].[name] = N'UpdatedAt');
+IF @var3 IS NOT NULL EXEC(N'ALTER TABLE [Orders] DROP CONSTRAINT ' + @var3 + ';');
+UPDATE [Orders] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Orders] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Orders] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.156 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Orders] ADD [CouponCode] nvarchar(max) NULL;
+2026-05-30 17:14:09.180 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var4 nvarchar(max);
+SELECT @var4 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Coupons]') AND [c].[name] = N'UpdatedAt');
+IF @var4 IS NOT NULL EXEC(N'ALTER TABLE [Coupons] DROP CONSTRAINT ' + @var4 + ';');
+UPDATE [Coupons] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Coupons] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Coupons] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.200 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var5 nvarchar(max);
+SELECT @var5 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Coupons]') AND [c].[name] = N'MinimumOrderAmount');
+IF @var5 IS NOT NULL EXEC(N'ALTER TABLE [Coupons] DROP CONSTRAINT ' + @var5 + ';');
+ALTER TABLE [Coupons] ALTER COLUMN [MinimumOrderAmount] decimal(18,2) NULL;
+2026-05-30 17:14:09.224 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var6 nvarchar(max);
+SELECT @var6 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Categories]') AND [c].[name] = N'UpdatedAt');
+IF @var6 IS NOT NULL EXEC(N'ALTER TABLE [Categories] DROP CONSTRAINT ' + @var6 + ';');
+UPDATE [Categories] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Categories] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Categories] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.246 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var7 nvarchar(max);
+SELECT @var7 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Carts]') AND [c].[name] = N'UpdatedAt');
+IF @var7 IS NOT NULL EXEC(N'ALTER TABLE [Carts] DROP CONSTRAINT ' + @var7 + ';');
+UPDATE [Carts] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Carts] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Carts] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.270 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var8 nvarchar(max);
+SELECT @var8 = QUOTENAME([d].[name])
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Addresses]') AND [c].[name] = N'UpdatedAt');
+IF @var8 IS NOT NULL EXEC(N'ALTER TABLE [Addresses] DROP CONSTRAINT ' + @var8 + ';');
+UPDATE [Addresses] SET [UpdatedAt] = '0001-01-01T00:00:00.0000000' WHERE [UpdatedAt] IS NULL;
+ALTER TABLE [Addresses] ALTER COLUMN [UpdatedAt] datetime2 NOT NULL;
+ALTER TABLE [Addresses] ADD DEFAULT '0001-01-01T00:00:00.0000000' FOR [UpdatedAt];
+2026-05-30 17:14:09.275 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Wishlists] (
+    [Id] uniqueidentifier NOT NULL,
+    [UserId] uniqueidentifier NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NOT NULL,
+    [CreatedBy] uniqueidentifier NULL,
+    [UpdatedBy] uniqueidentifier NULL,
+    CONSTRAINT [PK_Wishlists] PRIMARY KEY ([Id])
+);
+2026-05-30 17:14:09.280 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [WishlistItems] (
+    [Id] uniqueidentifier NOT NULL,
+    [WishlistId] uniqueidentifier NOT NULL,
+    [ProductId] uniqueidentifier NOT NULL,
+    [AddedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_WishlistItems] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_WishlistItems_Products_ProductId] FOREIGN KEY ([ProductId]) REFERENCES [Products] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_WishlistItems_Wishlists_WishlistId] FOREIGN KEY ([WishlistId]) REFERENCES [Wishlists] ([Id]) ON DELETE CASCADE
+);
+2026-05-30 17:14:09.283 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_WishlistItems_ProductId] ON [WishlistItems] ([ProductId]);
+2026-05-30 17:14:09.285 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_WishlistItems_WishlistId_ProductId] ON [WishlistItems] ([WishlistId], [ProductId]);
+2026-05-30 17:14:09.287 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Wishlists_UserId] ON [Wishlists] ([UserId]);
+2026-05-30 17:14:09.291 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260530121752_AddWishlist', N'10.0.8');
+2026-05-30 17:14:09.298 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2026-05-30 18:11:41.662 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 18:11:42.076 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:11:42.077 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:11:42.077 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:11:42.077 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:11:42.077 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:12:17.397 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 18:12:17.740 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:12:17.741 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:12:17.741 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:12:17.741 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:12:17.741 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:13:04.205 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 18:13:04.692 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:13:04.693 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:13:04.693 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:13:04.693 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:13:04.693 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:13:05.186 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:13:05.256 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:13:05.258 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:13:05.260 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:13:05.322 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-30 18:13:05.362 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-30 18:13:05.577 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-30 18:13:05.577 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-30 18:13:05.577 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 18:13:05.577 +03:00 [INF] Hosting environment: Development
+2026-05-30 18:13:05.577 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-30 18:13:06.269 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-30 18:13:06.313 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 18:13:06.421 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-30 18:13:06.422 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 18:13:06.423 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 134.6165 ms
+2026-05-30 18:13:06.424 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 155.5706ms
+2026-05-30 18:13:06.442 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-30 18:13:06.442 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-30 18:13:06.444 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 18:13:06.445 +03:00 [INF] CORS policy execution failed.
+2026-05-30 18:13:06.445 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 18:13:06.451 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 18:13:06.451 +03:00 [INF] Sending file with download name ''.
+2026-05-30 18:13:06.451 +03:00 [INF] Sending file with download name ''.
+2026-05-30 18:13:06.453 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 18:13:06.453 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.9502 ms
+2026-05-30 18:13:06.453 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 11.4284ms
+2026-05-30 18:13:06.473 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 18:13:06.476 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 32.8741 ms
+2026-05-30 18:13:06.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 36.7045ms
+2026-05-30 18:13:06.683 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-30 18:13:06.684 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 18:13:06.850 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 18:13:06.850 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 166.7984 ms
+2026-05-30 18:13:06.851 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 167.4603ms
+2026-05-30 18:13:26.761 +03:00 [INF] Application is shutting down...
+2026-05-30 18:40:12.320 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 18:40:12.728 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:40:12.729 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:40:12.729 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:40:12.729 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:40:12.729 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:40:12.965 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-30 18:40:12.983 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-30 18:40:12.996 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-30 18:57:35.059 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 18:57:35.536 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:57:35.537 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:57:35.537 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:57:35.537 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:57:35.537 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 18:57:36.020 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:57:36.091 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:57:36.093 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:57:36.096 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 18:57:36.156 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-30 18:57:36.195 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-30 18:57:36.396 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-30 18:57:36.396 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-30 18:57:36.396 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 18:57:36.396 +03:00 [INF] Hosting environment: Development
+2026-05-30 18:57:36.397 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-30 18:57:36.757 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-30 18:57:36.815 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 18:57:36.923 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-30 18:57:36.924 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 18:57:36.925 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 134.8055 ms
+2026-05-30 18:57:36.927 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 177.2727ms
+2026-05-30 18:57:36.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-30 18:57:36.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-30 18:57:36.957 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 18:57:36.957 +03:00 [INF] CORS policy execution failed.
+2026-05-30 18:57:36.957 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 18:57:36.959 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 18:57:36.963 +03:00 [INF] Sending file with download name ''.
+2026-05-30 18:57:36.963 +03:00 [INF] Sending file with download name ''.
+2026-05-30 18:57:36.966 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 18:57:36.966 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.7648 ms
+2026-05-30 18:57:36.966 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 13.2218ms
+2026-05-30 18:57:37.048 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 18:57:37.050 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 94.6113 ms
+2026-05-30 18:57:37.051 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 98.2249ms
+2026-05-30 18:57:37.202 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-30 18:57:37.203 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 18:57:37.380 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 18:57:37.381 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 178.0806 ms
+2026-05-30 18:57:37.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 178.6644ms
+2026-05-30 18:57:55.860 +03:00 [INF] Application is shutting down...
+2026-05-30 22:55:21.859 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 22:55:22.525 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:55:22.527 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:55:22.527 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:55:22.527 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:55:22.527 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:55:22.990 +03:00 [ERR] An error occurred using the connection to database 'ShopNest' on server '127.0.0.1,1433'.
+2026-05-30 22:55:23.004 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ShopNest.Infrastructure.Persistence.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - Undefined error: 0)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(SqlConnectionEncryptOption encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired, Boolean tlsFirst, String serverCertificateFilename)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(IDbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:55984c60-0308-4162-929a-84482b6d7f28
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - Undefined error: 0)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(SqlConnectionEncryptOption encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired, Boolean tlsFirst, String serverCertificateFilename)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(IDbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:55984c60-0308-4162-929a-84482b6d7f28

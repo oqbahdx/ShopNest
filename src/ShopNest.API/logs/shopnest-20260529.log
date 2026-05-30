@@ -1,0 +1,351 @@
+2026-05-29 12:25:14.772 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:25:14.811 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:25:14.811 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:25:14.811 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:25:14.812 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:25:29.755 +03:00 [ERR] An error occurred using the connection to database 'ShopNest' on server '127.0.0.1,1433'.
+2026-05-29 12:25:29.792 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ShopNest.Infrastructure.Persistence.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 35 - An internal exception was caught)
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at Microsoft.Data.SqlClient.ManagedSni.SniTcpHandle.Connect(String serverName, Int32 port, TimeoutTimer timeout, SqlConnectionIPAddressPreference ipPreference, String cachedFQDN, SQLDNSInfo& pendingDNSInfo)
+   at Microsoft.Data.SqlClient.ManagedSni.SniTcpHandle..ctor(String serverName, Int32 port, TimeoutTimer timeout, Boolean parallel, SqlConnectionIPAddressPreference ipPreference, String cachedFQDN, SQLDNSInfo& pendingDNSInfo, Boolean tlsFirst, String hostNameInCertificate, String serverCertificateFilename)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(IDbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 35 - An internal exception was caught)
+ ---> System.Net.Sockets.SocketException (61): Connection refused
+   at Microsoft.Data.SqlClient.ManagedSni.SniTcpHandle.Connect(String serverName, Int32 port, TimeoutTimer timeout, SqlConnectionIPAddressPreference ipPreference, String cachedFQDN, SQLDNSInfo& pendingDNSInfo)
+   at Microsoft.Data.SqlClient.ManagedSni.SniTcpHandle..ctor(String serverName, Int32 port, TimeoutTimer timeout, Boolean parallel, SqlConnectionIPAddressPreference ipPreference, String cachedFQDN, SQLDNSInfo& pendingDNSInfo, Boolean tlsFirst, String hostNameInCertificate, String serverCertificateFilename)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, IDbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionPoolGroupProviderInfo poolGroupProviderInfo, IDbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(IDbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.SqlClient.ConnectionPool.WaitHandleDbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:10061,State:0,Class:20
+2026-05-29 12:32:34.387 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:32:34.421 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:32:34.421 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:32:34.421 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:32:34.421 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:32:34.957 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:32:35.025 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:32:35.028 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:32:35.029 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:32:35.077 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-29 12:32:35.117 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-29 12:32:35.300 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-29 12:32:35.300 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-29 12:32:35.301 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 12:32:35.301 +03:00 [INF] Hosting environment: Development
+2026-05-29 12:32:35.301 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-29 12:32:36.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-29 12:32:36.662 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 12:32:36.766 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-29 12:32:36.766 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 12:32:36.767 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 126.1084 ms
+2026-05-29 12:32:36.769 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 143.3689ms
+2026-05-29 12:32:36.791 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-29 12:32:36.791 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-29 12:32:36.793 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 12:32:36.794 +03:00 [INF] CORS policy execution failed.
+2026-05-29 12:32:36.794 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-29 12:32:36.797 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 12:32:36.799 +03:00 [INF] Sending file with download name ''.
+2026-05-29 12:32:36.799 +03:00 [INF] Sending file with download name ''.
+2026-05-29 12:32:36.802 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 12:32:36.802 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.5001 ms
+2026-05-29 12:32:36.802 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 11.2276ms
+2026-05-29 12:32:36.827 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 12:32:36.828 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 35.9350 ms
+2026-05-29 12:32:36.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 38.3944ms
+2026-05-29 12:32:37.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-29 12:32:37.004 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 12:32:37.162 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 12:32:37.162 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 158.2005 ms
+2026-05-29 12:32:37.162 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 158.8183ms
+2026-05-29 12:32:38.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/favicon.svg - null null
+2026-05-29 12:32:38.028 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-05-29 12:32:38.028 +03:00 [INF] Sending file with download name ''.
+2026-05-29 12:32:38.028 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-05-29 12:32:38.029 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 1.1225 ms
+2026-05-29 12:32:38.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/favicon.svg - 200 533 image/svg+xml 3.0407ms
+2026-05-29 12:32:51.944 +03:00 [INF] Application is shutting down...
+2026-05-29 12:40:40.149 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:40:40.180 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:40:40.181 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:40:40.181 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:40:40.181 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:40:40.618 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:40:40.686 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:40:40.688 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:40:40.691 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:40:40.737 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-29 12:40:40.775 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-29 12:40:40.901 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-29 12:40:40.901 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-29 12:40:40.902 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 12:40:40.902 +03:00 [INF] Hosting environment: Development
+2026-05-29 12:40:40.903 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-29 12:40:41.157 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-29 12:40:41.192 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 12:40:41.293 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-29 12:40:41.294 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 12:40:41.295 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 125.5806 ms
+2026-05-29 12:40:41.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 140.4629ms
+2026-05-29 12:40:41.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-29 12:40:41.308 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-29 12:40:41.310 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 12:40:41.311 +03:00 [INF] CORS policy execution failed.
+2026-05-29 12:40:41.311 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-29 12:40:41.313 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 12:40:41.314 +03:00 [INF] Sending file with download name ''.
+2026-05-29 12:40:41.314 +03:00 [INF] Sending file with download name ''.
+2026-05-29 12:40:41.317 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 12:40:41.317 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 7.5596 ms
+2026-05-29 12:40:41.318 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 9.2835ms
+2026-05-29 12:40:41.339 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 12:40:41.340 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 30.8411 ms
+2026-05-29 12:40:41.341 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 32.9822ms
+2026-05-29 12:40:41.520 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-29 12:40:41.521 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 12:40:41.688 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 12:40:41.688 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 167.3041 ms
+2026-05-29 12:40:41.688 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 167.9909ms
+2026-05-29 12:42:18.661 +03:00 [INF] Application is shutting down...
+2026-05-29 12:42:22.049 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:42:22.082 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:42:22.082 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:42:22.082 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:42:22.082 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 12:42:22.539 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:42:22.609 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:42:22.611 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:42:22.613 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 12:42:22.657 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-29 12:42:22.692 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-29 12:42:22.807 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-29 12:42:22.807 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-29 12:42:22.808 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 12:42:22.808 +03:00 [INF] Hosting environment: Development
+2026-05-29 12:42:22.808 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-29 12:42:23.250 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-29 12:42:23.280 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 12:42:23.378 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-29 12:42:23.379 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 12:42:23.380 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 116.1425 ms
+2026-05-29 12:42:23.382 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 132.7022ms
+2026-05-29 12:42:23.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-29 12:42:23.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-29 12:42:23.392 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 12:42:23.393 +03:00 [INF] CORS policy execution failed.
+2026-05-29 12:42:23.393 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-29 12:42:23.395 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 12:42:23.396 +03:00 [INF] Sending file with download name ''.
+2026-05-29 12:42:23.396 +03:00 [INF] Sending file with download name ''.
+2026-05-29 12:42:23.398 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 12:42:23.398 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.5266 ms
+2026-05-29 12:42:23.398 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 7.8632ms
+2026-05-29 12:42:23.411 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 12:42:23.412 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 20.4484 ms
+2026-05-29 12:42:23.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 22.4723ms
+2026-05-29 12:42:23.579 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-29 12:42:23.579 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 12:42:23.708 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 12:42:23.708 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 129.3787 ms
+2026-05-29 12:42:23.709 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 129.946ms
+2026-05-29 12:43:58.310 +03:00 [INF] Application is shutting down...
+2026-05-29 13:41:10.397 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 13:41:10.427 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 13:41:10.427 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 13:41:10.427 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 13:41:10.428 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 13:41:10.918 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 13:41:10.985 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 13:41:10.987 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 13:41:10.989 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 13:41:11.047 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-29 13:41:11.091 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-29 13:41:11.273 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-29 13:41:11.273 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-29 13:41:11.274 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 13:41:11.275 +03:00 [INF] Hosting environment: Development
+2026-05-29 13:41:11.275 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-29 13:41:11.485 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-29 13:41:11.527 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 13:41:11.633 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-29 13:41:11.634 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 13:41:11.635 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 137.4023 ms
+2026-05-29 13:41:11.636 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 152.3147ms
+2026-05-29 13:41:11.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-29 13:41:11.663 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-29 13:41:11.664 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 13:41:11.667 +03:00 [INF] CORS policy execution failed.
+2026-05-29 13:41:11.667 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-29 13:41:11.672 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 13:41:11.672 +03:00 [INF] Sending file with download name ''.
+2026-05-29 13:41:11.672 +03:00 [INF] Sending file with download name ''.
+2026-05-29 13:41:11.674 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 13:41:11.674 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.0565 ms
+2026-05-29 13:41:11.674 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 11.2149ms
+2026-05-29 13:41:11.711 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 13:41:11.712 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 48.7616 ms
+2026-05-29 13:41:11.713 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 51.4003ms
+2026-05-29 13:41:11.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-29 13:41:11.892 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 13:41:12.033 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 13:41:12.033 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 141.9041 ms
+2026-05-29 13:41:12.033 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 142.978ms
+2026-05-29 13:42:06.182 +03:00 [INF] Application is shutting down...
+2026-05-29 18:34:59.599 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 18:34:59.631 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 18:34:59.631 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 18:34:59.631 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 18:34:59.632 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-29 18:35:00.144 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 18:35:00.214 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 18:35:00.216 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 18:35:00.219 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-29 18:35:00.277 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-29 18:35:00.318 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-29 18:35:00.544 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-29 18:35:00.544 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-29 18:35:00.545 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 18:35:00.545 +03:00 [INF] Hosting environment: Development
+2026-05-29 18:35:00.545 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-29 18:35:01.075 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-29 18:35:01.111 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 18:35:01.216 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-29 18:35:01.216 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-29 18:35:01.218 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 127.9759 ms
+2026-05-29 18:35:01.219 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 144.3011ms
+2026-05-29 18:35:01.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-29 18:35:01.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-29 18:35:01.535 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 18:35:01.536 +03:00 [INF] CORS policy execution failed.
+2026-05-29 18:35:01.536 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-29 18:35:01.538 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 18:35:01.539 +03:00 [INF] Sending file with download name ''.
+2026-05-29 18:35:01.539 +03:00 [INF] Sending file with download name ''.
+2026-05-29 18:35:01.541 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-29 18:35:01.541 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.4465 ms
+2026-05-29 18:35:01.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 8.8231ms
+2026-05-29 18:35:01.556 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-29 18:35:01.557 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 22.1754 ms
+2026-05-29 18:35:01.557 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 25.2512ms
+2026-05-29 18:35:01.723 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-29 18:35:01.723 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 18:35:01.863 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-29 18:35:01.863 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 140.0300 ms
+2026-05-29 18:35:01.863 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 140.541ms
+2026-05-29 18:35:02.571 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/favicon.svg - null null
+2026-05-29 18:35:02.571 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-05-29 18:35:02.571 +03:00 [INF] Sending file with download name ''.
+2026-05-29 18:35:02.572 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/favicon.svg'
+2026-05-29 18:35:02.572 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.7560 ms
+2026-05-29 18:35:02.572 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/favicon.svg - 200 533 image/svg+xml 1.3557ms
+2026-05-29 18:35:29.851 +03:00 [INF] Application is shutting down...
