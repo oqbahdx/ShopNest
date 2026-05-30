@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qBPiR65eAJ4=",
+  "dgSpecHash": "zp98iNLVJFU=",
   "success": true,
   "projectFilePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Domain/ShopNest.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ositrade/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

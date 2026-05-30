@@ -22,7 +22,8 @@ public sealed class LocalFileService : IFileService
 
 	public async Task<FileUploadResult> UploadAsync(IFormFile file, string container, CancellationToken ct = default(CancellationToken))
 	{
-		string uploadsDir = Path.Combine(_env.WebRootPath, "uploads", container);
+		string webRootPath = _env.WebRootPath ?? Path.Combine(_env.ContentRootPath, "wwwroot");
+		string uploadsDir = Path.Combine(webRootPath, "uploads", container);
 		Directory.CreateDirectory(uploadsDir);
 		string ext = Path.GetExtension(file.FileName);
 		string fileName = $"{Guid.NewGuid()}{ext}";
@@ -31,9 +32,9 @@ public sealed class LocalFileService : IFileService
 		await using (FileStream stream = File.Create(filePath))
 		{
 			await file.CopyToAsync(stream, ct);
-			HttpRequest request = _httpContext.HttpContext.Request;
-			string baseUrl = $"{request.Scheme}://{request.Host}";
-			string url = $"{baseUrl}/uploads/{container}/{fileName}";
+				HttpRequest? request = _httpContext.HttpContext?.Request;
+				string basePath = request is null ? string.Empty : $"{request.Scheme}://{request.Host}";
+				string url = $"{basePath}/uploads/{container}/{fileName}";
 			result = new FileUploadResult(url, fileName, file.Length);
 		}
 		return result;
@@ -44,7 +45,8 @@ public sealed class LocalFileService : IFileService
 		try
 		{
 			string fileName = Path.GetFileName(new Uri(fileUrl).LocalPath);
-			string path = Path.Combine(_env.WebRootPath, "uploads", container, fileName);
+				string webRootPath = _env.WebRootPath ?? Path.Combine(_env.ContentRootPath, "wwwroot");
+				string path = Path.Combine(webRootPath, "uploads", container, fileName);
 			if (File.Exists(path))
 			{
 				File.Delete(path);
