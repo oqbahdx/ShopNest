@@ -15,6 +15,7 @@ using ShopNest.Application.Common.Settings;
 using ShopNest.Infrastructure.Persistence;
 using ShopNest.Infrastructure.Services;
 using ShopNest.Infrastructure.Settings;
+using JwtSettings = ShopNest.Application.Common.Settings.JwtSettings;
 
 namespace ShopNest.Infrastructure;
 
