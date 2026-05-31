@@ -507,3 +507,6 @@
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/tests/ShopNest.IntegrationTests/obj/Debug/net10.0/ShopNest.IntegrationTests.pdb
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/tests/ShopNest.IntegrationTests/obj/Debug/net10.0/ShopNest.IntegrationTests.genruntimeconfig.cache
 /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/tests/ShopNest.IntegrationTests/obj/Debug/net10.0/ref/ShopNest.IntegrationTests.dll
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/tests/ShopNest.IntegrationTests/bin/Debug/net10.0/AWSSDK.Core.dll
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/tests/ShopNest.IntegrationTests/bin/Debug/net10.0/AWSSDK.S3.dll
+/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/tests/ShopNest.IntegrationTests/bin/Debug/net10.0/SixLabors.ImageSharp.dll

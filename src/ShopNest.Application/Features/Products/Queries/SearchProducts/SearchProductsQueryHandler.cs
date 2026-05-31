@@ -14,26 +14,22 @@ public sealed class SearchProductsQueryHandler
     public async Task<Result<PagedResult<ProductListDto>>> Handle(
         SearchProductsQuery qry, CancellationToken ct)
     {
-        var term = qry.Search.Trim().ToLower();
-        // Phase 1: LIKE-based search.
-        // Phase 8 upgrade: replace with EF.Functions.Contains() + FULLTEXT INDEX
-        // and apply weight-based ordering (name match ranks above description match).
+        var term = qry.Search.Trim();
         var q = _db.Products
             .AsNoTracking()
             .Where(p => p.IsActive)
             .Include(p => p.Category)
             .Include(p => p.Images)
             .Where(p =>
-                EF.Functions.Like(p.Name.ToLower(), $"%{term}%") ||
-                EF.Functions.Like(p.SKU.ToLower(), $"%{term}%") ||
+                EF.Functions.Contains(p.Name, $"\"{term}*\"") ||
+                EF.Functions.Contains(p.SKU, $"\"{term}*\"") ||
                 (p.Description != null &&
-                 EF.Functions.Like(p.Description.ToLower(), $"%{term}%")));
+                 EF.Functions.Contains(p.Description, $"\"{term}*\"")));
         var totalCount = await q.CountAsync(ct);
-        // Rank: name matches first, then SKU, then description
         var products = await q
             .OrderBy(p =>
-                EF.Functions.Like(p.Name.ToLower(), $"%{term}%") ? 0 :
-                EF.Functions.Like(p.SKU.ToLower(), $"%{term}%") ? 1 : 2)
+                EF.Functions.Contains(p.Name, $"\"{term}*\"") ? 0 :
+                EF.Functions.Contains(p.SKU, $"\"{term}*\"") ? 1 : 2)
             .ThenByDescending(p => p.AverageRating)
             .Skip((qry.Page - 1) * qry.PageSize)
             .Take(qry.PageSize)

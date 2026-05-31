@@ -455,3 +455,210 @@ Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfull
    at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
 ClientConnectionId:55984c60-0308-4162-929a-84482b6d7f28
+2026-05-30 22:57:24.017 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-30 22:57:24.535 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'CartItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:57:24.537 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'OrderItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:57:24.538 +03:00 [WRN] Entity 'Order' has a global query filter defined and is the required end of a relationship with the entity 'Payment'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:57:24.538 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'ProductImage'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:57:24.542 +03:00 [WRN] Entity 'Product' has a global query filter defined and is the required end of a relationship with the entity 'WishlistItem'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2026-05-30 22:57:25.161 +03:00 [INF] Executed DbCommand (130ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 22:57:25.230 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 22:57:25.232 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 22:57:25.234 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedName
+2026-05-30 22:57:25.304 +03:00 [INF] User profile is available. Using '/Users/ositrade/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-30 22:57:25.379 +03:00 [WRN] The WebRootPath was not found: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/wwwroot. Static files may be unavailable.
+2026-05-30 22:57:25.567 +03:00 [INF] Now listening on: https://localhost:7240
+2026-05-30 22:57:25.568 +03:00 [INF] Now listening on: http://localhost:5149
+2026-05-30 22:57:25.568 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:57:25.568 +03:00 [INF] Hosting environment: Development
+2026-05-30 22:57:25.568 +03:00 [INF] Content root path: /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API
+2026-05-30 22:57:26.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/v1 - null null
+2026-05-30 22:57:26.130 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 22:57:26.253 +03:00 [INF] Write content with HTTP Response ContentType of text/html
+2026-05-30 22:57:26.253 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/{documentName?}'
+2026-05-30 22:57:26.254 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 146.6771 ms
+2026-05-30 22:57:26.255 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/v1 - 200 624 text/html 203.0721ms
+2026-05-30 22:57:26.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.js - null null
+2026-05-30 22:57:26.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - null null
+2026-05-30 22:57:26.286 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 22:57:26.287 +03:00 [INF] CORS policy execution failed.
+2026-05-30 22:57:26.287 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 22:57:26.290 +03:00 [INF] Executing endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 22:57:26.291 +03:00 [INF] Sending file with download name ''.
+2026-05-30 22:57:26.291 +03:00 [INF] Sending file with download name ''.
+2026-05-30 22:57:26.293 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.aspnetcore.js'
+2026-05-30 22:57:26.293 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.4230 ms
+2026-05-30 22:57:26.293 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.aspnetcore.js - 200 1111 text/javascript 10.5236ms
+2026-05-30 22:57:26.363 +03:00 [INF] Executed endpoint 'HTTP: GET /scalar/scalar.js'
+2026-05-30 22:57:26.364 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 79.2050 ms
+2026-05-30 22:57:26.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/scalar/scalar.js - 200 1012335 text/javascript 82.005ms
+2026-05-30 22:57:26.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7240/openapi/v1.json - null null
+2026-05-30 22:57:26.531 +03:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 22:57:26.722 +03:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2026-05-30 22:57:26.723 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 192.1503 ms
+2026-05-30 22:57:26.723 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7240/openapi/v1.json - 200 null application/json;charset=utf-8 192.8824ms
+2026-05-30 22:57:52.090 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7240/api/v1/auth/register - application/json 76
+2026-05-30 22:57:52.099 +03:00 [INF] CORS policy execution failed.
+2026-05-30 22:57:52.100 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 22:57:52.102 +03:00 [INF] Executing endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 22:57:52.134 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ShopNest.Application.Features.Auth.DTOs.RegisterRequest, System.Threading.CancellationToken) on controller ShopNest.API.Controllers.AuthController (ShopNest.API).
+2026-05-30 22:57:52.158 +03:00 [INF] Executing action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API) - Validation state: "Valid"
+2026-05-30 22:57:52.168 +03:00 [INF] Registration attempt for 
+2026-05-30 22:57:52.239 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 22:57:52.243 +03:00 [WRN] Identity creation failed for : Passwords must be at least 8 characters.; Passwords must have at least one non alphanumeric character.; Passwords must have at least one digit ('0'-'9').; Passwords must have at least one lowercase ('a'-'z').; Passwords must have at least one uppercase ('A'-'Z').; Passwords must use at least 1 different characters.
+2026-05-30 22:57:52.247 +03:00 [INF] Executed action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 86.6086ms.
+2026-05-30 22:57:52.252 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-30 22:57:52.257 +03:00 [INF] Executed action ShopNest.API.Controllers.AuthController.Register (ShopNest.API) in 120.231ms
+2026-05-30 22:57:52.257 +03:00 [INF] Executed endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 22:57:52.257 +03:00 [INF] HTTP POST /api/v1/auth/register responded 400 in 158.9560 ms
+2026-05-30 22:57:52.261 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7240/api/v1/auth/register - 400 null application/json; charset=utf-8 172.149ms
+2026-05-30 23:01:17.192 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7240/api/v1/auth/register - application/json 137
+2026-05-30 23:01:17.196 +03:00 [INF] CORS policy execution failed.
+2026-05-30 23:01:17.196 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 23:01:17.197 +03:00 [INF] Executing endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 23:01:17.198 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ShopNest.Application.Features.Auth.DTOs.RegisterRequest, System.Threading.CancellationToken) on controller ShopNest.API.Controllers.AuthController (ShopNest.API).
+2026-05-30 23:01:17.200 +03:00 [INF] Executing action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API) - Validation state: "Valid"
+2026-05-30 23:01:17.205 +03:00 [INF] Registration attempt for oqbahdx@gmail.com
+2026-05-30 23:01:17.241 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 23:01:17.244 +03:00 [WRN] Identity creation failed for oqbahdx@gmail.com: Passwords must have at least one non alphanumeric character.; Passwords must have at least one lowercase ('a'-'z').; Passwords must have at least one uppercase ('A'-'Z').
+2026-05-30 23:01:17.244 +03:00 [INF] Executed action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 44.3138ms.
+2026-05-30 23:01:17.245 +03:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-30 23:01:17.247 +03:00 [INF] Executed action ShopNest.API.Controllers.AuthController.Register (ShopNest.API) in 49.1649ms
+2026-05-30 23:01:17.247 +03:00 [INF] Executed endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 23:01:17.247 +03:00 [INF] HTTP POST /api/v1/auth/register responded 400 in 51.6691 ms
+2026-05-30 23:01:17.252 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7240/api/v1/auth/register - 400 null application/json; charset=utf-8 59.9933ms
+2026-05-30 23:01:48.671 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7240/api/v1/auth/register - application/json 151
+2026-05-30 23:01:48.672 +03:00 [INF] CORS policy execution failed.
+2026-05-30 23:01:48.672 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 23:01:48.674 +03:00 [INF] Executing endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 23:01:48.674 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ShopNest.Application.Features.Auth.DTOs.RegisterRequest, System.Threading.CancellationToken) on controller ShopNest.API.Controllers.AuthController (ShopNest.API).
+2026-05-30 23:01:48.684 +03:00 [INF] Executing action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API) - Validation state: "Valid"
+2026-05-30 23:01:48.707 +03:00 [INF] Registration attempt for oqbahdx@gmail.com
+2026-05-30 23:01:48.714 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 23:01:48.799 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @normalizedUserName
+2026-05-30 23:01:48.804 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 23:01:48.968 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 500), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 100), @p8='?' (DbType = Boolean), @p9='?' (Size = 100), @p10='?' (DbType = Boolean), @p11='?' (DbType = DateTimeOffset), @p12='?' (Size = 256), @p13='?' (Size = 256), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (DbType = DateTime2), @p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [AccessFailedCount], [AvatarUrl], [ConcurrencyStamp], [CreatedAt], [Email], [EmailConfirmed], [FirstName], [IsActive], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UpdatedAt], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2026-05-30 23:01:48.988 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedRoleName
+2026-05-30 23:01:49.037 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p='?' (DbType = Guid), @p1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[RoleId]
+FROM [UserRoles] AS [u]
+WHERE [u].[UserId] = @p AND [u].[RoleId] = @p1
+2026-05-30 23:01:49.041 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @normalizedRoleName
+2026-05-30 23:01:49.073 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @normalizedUserName
+2026-05-30 23:01:49.085 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 23:01:49.156 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p22='?' (DbType = Guid), @p2='?' (DbType = Int32), @p3='?' (Size = 500), @p4='?' (Size = 4000), @p23='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 256), @p7='?' (DbType = Boolean), @p8='?' (Size = 100), @p9='?' (DbType = Boolean), @p10='?' (Size = 100), @p11='?' (DbType = Boolean), @p12='?' (DbType = DateTimeOffset), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 4000), @p17='?' (DbType = Boolean), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (DbType = DateTime2), @p21='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [Users] SET [AccessFailedCount] = @p2, [AvatarUrl] = @p3, [ConcurrencyStamp] = @p4, [CreatedAt] = @p5, [Email] = @p6, [EmailConfirmed] = @p7, [FirstName] = @p8, [IsActive] = @p9, [LastName] = @p10, [LockoutEnabled] = @p11, [LockoutEnd] = @p12, [NormalizedEmail] = @p13, [NormalizedUserName] = @p14, [PasswordHash] = @p15, [PhoneNumber] = @p16, [PhoneNumberConfirmed] = @p17, [SecurityStamp] = @p18, [TwoFactorEnabled] = @p19, [UpdatedAt] = @p20, [UserName] = @p21
+OUTPUT 1
+WHERE [Id] = @p22 AND [ConcurrencyStamp] = @p23;
+2026-05-30 23:01:49.172 +03:00 [ERR] Failed to send email to oqbahdx@gmail.com (subject: Confirm your ShopNest account)
+System.ArgumentNullException: Value cannot be null. (Parameter 'apiKey')
+   at SendGrid.SendGridClientOptions.set_ApiKey(String value)
+   at SendGrid.SendGridClient.buildOptions(String apiKey, String host, Dictionary`2 requestHeaders, String version, String urlPath, Boolean httpErrorAsException)
+   at SendGrid.SendGridClient..ctor(String apiKey, String host, Dictionary`2 requestHeaders, String version, String urlPath)
+   at ShopNest.Infrastructure.Services.EmailService.SendAsync(String toEmail, String subject, String html, CancellationToken ct) in /Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.Infrastructure/Services/EmailService.cs:line 76
+2026-05-30 23:01:49.177 +03:00 [INF] User "0cc37270-5464-44cc-b5bd-08debe8648b9" registered successfully
+2026-05-30 23:01:49.180 +03:00 [INF] Executed action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 495.118ms.
+2026-05-30 23:01:49.180 +03:00 [INF] Executing OkObjectResult, writing value of type 'ShopNest.API.Controllers.Envelope`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-30 23:01:49.182 +03:00 [INF] Executed action ShopNest.API.Controllers.AuthController.Register (ShopNest.API) in 500.2962ms
+2026-05-30 23:01:49.182 +03:00 [INF] Executed endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 23:01:49.182 +03:00 [INF] HTTP POST /api/v1/auth/register responded 200 in 510.0257 ms
+2026-05-30 23:01:49.182 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7240/api/v1/auth/register - 200 null application/json; charset=utf-8 511.5641ms
+2026-05-30 23:43:06.799 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7240/api/v1/auth/register - application/json 151
+2026-05-30 23:43:06.805 +03:00 [INF] CORS policy execution failed.
+2026-05-30 23:43:06.805 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 23:43:06.811 +03:00 [INF] Executing endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 23:43:06.819 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ShopNest.Application.Features.Auth.DTOs.RegisterRequest, System.Threading.CancellationToken) on controller ShopNest.API.Controllers.AuthController (ShopNest.API).
+2026-05-30 23:43:06.847 +03:00 [INF] Executing action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API) - Validation state: "Valid"
+2026-05-30 23:43:06.853 +03:00 [INF] Registration attempt for oqbahdx@gmail.com
+2026-05-30 23:43:06.935 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 23:43:06.946 +03:00 [WRN] Registration rejected — email already taken: oqbahdx@gmail.com
+2026-05-30 23:43:06.947 +03:00 [INF] Executed action method ShopNest.API.Controllers.AuthController.Register (ShopNest.API), returned result Microsoft.AspNetCore.Mvc.ConflictObjectResult in 98.9415ms.
+2026-05-30 23:43:06.948 +03:00 [INF] Executing ConflictObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-30 23:43:06.948 +03:00 [INF] Executed action ShopNest.API.Controllers.AuthController.Register (ShopNest.API) in 118.0251ms
+2026-05-30 23:43:06.949 +03:00 [INF] Executed endpoint 'ShopNest.API.Controllers.AuthController.Register (ShopNest.API)'
+2026-05-30 23:43:06.949 +03:00 [INF] HTTP POST /api/v1/auth/register responded 409 in 147.0870 ms
+2026-05-30 23:43:06.949 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7240/api/v1/auth/register - 409 null application/json; charset=utf-8 150.5037ms
+2026-05-30 23:43:36.417 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7240/api/v1/auth/login - application/json 69
+2026-05-30 23:43:36.418 +03:00 [INF] CORS policy execution failed.
+2026-05-30 23:43:36.418 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 23:43:36.426 +03:00 [INF] Executing endpoint 'ShopNest.API.Controllers.AuthController.Login (ShopNest.API)'
+2026-05-30 23:43:36.455 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ShopNest.Application.Features.Auth.DTOs.LoginRequest, System.Threading.CancellationToken) on controller ShopNest.API.Controllers.AuthController (ShopNest.API).
+2026-05-30 23:43:36.466 +03:00 [INF] Executing action method ShopNest.API.Controllers.AuthController.Login (ShopNest.API) - Validation state: "Valid"
+2026-05-30 23:43:36.483 +03:00 [INF] Login attempt from ::1 for oqbahdx@gmail.com
+2026-05-30 23:43:36.488 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 23:43:36.504 +03:00 [INF] Executed action method ShopNest.API.Controllers.AuthController.Login (ShopNest.API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 38.0402ms.
+2026-05-30 23:43:36.504 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-30 23:43:36.555 +03:00 [INF] Executed action ShopNest.API.Controllers.AuthController.Login (ShopNest.API) in 99.158ms
+2026-05-30 23:43:36.556 +03:00 [INF] Executed endpoint 'ShopNest.API.Controllers.AuthController.Login (ShopNest.API)'
+2026-05-30 23:43:36.566 +03:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 148.0367 ms
+2026-05-30 23:43:36.567 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7240/api/v1/auth/login - 401 null application/json; charset=utf-8 149.8095ms
+2026-05-30 23:43:49.411 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7240/api/v1/auth/login - application/json 70
+2026-05-30 23:43:49.417 +03:00 [INF] CORS policy execution failed.
+2026-05-30 23:43:49.418 +03:00 [INF] Request origin https://localhost:7240 does not have permission to access the resource.
+2026-05-30 23:43:49.456 +03:00 [INF] Executing endpoint 'ShopNest.API.Controllers.AuthController.Login (ShopNest.API)'
+2026-05-30 23:43:49.456 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ShopNest.Application.Features.Auth.DTOs.LoginRequest, System.Threading.CancellationToken) on controller ShopNest.API.Controllers.AuthController (ShopNest.API).
+2026-05-30 23:43:49.459 +03:00 [INF] Executing action method ShopNest.API.Controllers.AuthController.Login (ShopNest.API) - Validation state: "Valid"
+2026-05-30 23:43:49.464 +03:00 [INF] Login attempt from ::1 for oqbahddx@gmail.com
+2026-05-30 23:43:49.484 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[AccessFailedCount], [u].[AvatarUrl], [u].[ConcurrencyStamp], [u].[CreatedAt], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UpdatedAt], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedEmail] = @normalizedEmail
+2026-05-30 23:43:49.491 +03:00 [WRN] Login failed — unknown email: oqbahddx@gmail.com
+2026-05-30 23:43:49.491 +03:00 [INF] Executed action method ShopNest.API.Controllers.AuthController.Login (ShopNest.API), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 31.8335ms.
+2026-05-30 23:43:49.492 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType1`3[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-30 23:43:49.513 +03:00 [INF] Executed action ShopNest.API.Controllers.AuthController.Login (ShopNest.API) in 55.7884ms
+2026-05-30 23:43:49.513 +03:00 [INF] Executed endpoint 'ShopNest.API.Controllers.AuthController.Login (ShopNest.API)'
+2026-05-30 23:43:49.513 +03:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 96.5299 ms
+2026-05-30 23:43:49.513 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7240/api/v1/auth/login - 401 null application/json; charset=utf-8 103.0718ms

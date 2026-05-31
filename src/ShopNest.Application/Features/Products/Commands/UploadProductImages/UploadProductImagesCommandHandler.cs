@@ -1,4 +1,5 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
 using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 using ShopNest.Domain.Entities;
@@ -10,12 +11,14 @@ public sealed class UploadProductImagesCommandHandler
 {
     private readonly IApplicationDbContext _db;
     private readonly IFileService _fileService;
+    private readonly ICacheService _cache;
 
     public UploadProductImagesCommandHandler(
-        IApplicationDbContext db, IFileService fileService)
+        IApplicationDbContext db, IFileService fileService, ICacheService cache)
     {
         _db = db;
         _fileService = fileService;
+        _cache = cache;
     }
 
     public async Task<Result<List<string>>> Handle(
@@ -59,6 +62,8 @@ public sealed class UploadProductImagesCommandHandler
         }
 
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Products.Prefix, ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result<List<string>>.Success(uploadedUrls);
     }
 }

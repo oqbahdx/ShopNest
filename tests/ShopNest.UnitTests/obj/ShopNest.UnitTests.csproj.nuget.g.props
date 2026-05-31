@@ -22,5 +22,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/Users/ositrade/.nuget/packages/xunit.analyzers/1.18.0</Pkgxunit_analyzers>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">/Users/ositrade/.nuget/packages/awssdk.core/4.0.7.4</PkgAWSSDK_Core>
+    <PkgAWSSDK_S3 Condition=" '$(PkgAWSSDK_S3)' == '' ">/Users/ositrade/.nuget/packages/awssdk.s3/4.0.23.5</PkgAWSSDK_S3>
   </PropertyGroup>
 </Project>

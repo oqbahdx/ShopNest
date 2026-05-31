@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\ShopNest.Application\ShopNest.Application.csproj" />
     <ProjectReference Include="..\..\src\ShopNest.Domain\ShopNest.Domain.csproj" />
+    <ProjectReference Include="..\..\src\ShopNest.Infrastructure\ShopNest.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

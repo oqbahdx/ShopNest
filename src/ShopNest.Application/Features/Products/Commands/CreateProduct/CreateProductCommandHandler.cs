@@ -1,5 +1,7 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
 using ShopNest.Application.Common.Extensions;
+using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 using ShopNest.Domain.Entities;
 
@@ -9,7 +11,12 @@ public sealed class CreateProductCommandHandler
     : IRequestHandler<CreateProductCommand, Result<Guid>>
 {
     private readonly IApplicationDbContext _db;
-    public CreateProductCommandHandler(IApplicationDbContext db) => _db = db;
+    private readonly ICacheService _cache;
+    public CreateProductCommandHandler(IApplicationDbContext db, ICacheService cache)
+    {
+        _db = db;
+        _cache = cache;
+    }
 
     public async Task<Result<Guid>> Handle(
         CreateProductCommand cmd, CancellationToken ct)
@@ -46,6 +53,8 @@ public sealed class CreateProductCommandHandler
         );
         _db.Products.Add(product);
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Products.Prefix, ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result<Guid>.Success(product.Id);
     }
 

@@ -344,6 +344,31 @@
           "lib/net10.0/AutoMapper.dll": {}
         }
       },
+      "AWSSDK.Core/4.0.7.4": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.7.4"
+          }
+        },
+        "compile": {
+          "lib/net8.0/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.S3/4.0.23.5": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.7.4"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.S3.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.23.5"
+          }
+        },
+        "compile": {
+          "lib/net8.0/AWSSDK.S3.dll": {}
+        }
+      },
       "Azure.Core/1.47.1": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "8.0.0",
@@ -1992,6 +2017,17 @@
           "lib/net6.0/ICSharpCode.SharpZipLib.dll": {}
         }
       },
+      "SixLabors.ImageSharp/3.1.6": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.6.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {}
+        }
+      },
       "SSH.NET/2025.1.0": {
         "dependencies": {
           "BouncyCastle.Cryptography": "2.6.2",
@@ -2289,6 +2325,7 @@
           "FluentValidation.DependencyInjectionExtensions": "12.1.1",
           "MediatR": "14.1.0",
           "Microsoft.EntityFrameworkCore": "10.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.8",
           "ShopNest.Domain": "1.0.0"
         },
         "runtime": {
@@ -2317,6 +2354,7 @@
       },
       "ShopNest.Infrastructure/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "4.0.23.5",
           "AutoMapper": "16.1.1",
           "MediatR": "14.1.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.8",
@@ -2329,6 +2367,7 @@
           "Serilog.Sinks.File": "7.0.0",
           "ShopNest.Application": "1.0.0",
           "ShopNest.Domain": "1.0.0",
+          "SixLabors.ImageSharp": "3.1.6",
           "StackExchange.Redis": "2.13.1",
           "Stripe.net": "51.1.0"
         },
@@ -4013,6 +4052,20 @@
       "path": "automapper/16.1.1",
       "hashPath": "automapper.16.1.1.nupkg.sha512"
     },
+    "AWSSDK.Core/4.0.7.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qNlzH2ygJ6JG8uefpvws782PnJlkVEwqRD5vz4fR8wFfwWU3ttyAjiwEOPEYcxl84mhQdYGI9gR+kroGFI2+wA==",
+      "path": "awssdk.core/4.0.7.4",
+      "hashPath": "awssdk.core.4.0.7.4.nupkg.sha512"
+    },
+    "AWSSDK.S3/4.0.23.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B7UPvqeZD/jIO1eMhCiNRfcvGChjP2yAHIj0NIIhXUVoH2u56YKkIR5CR7lmZfagJN8bCMMZpuxDbYBzgENZ0g==",
+      "path": "awssdk.s3/4.0.23.5",
+      "hashPath": "awssdk.s3.4.0.23.5.nupkg.sha512"
+    },
     "Azure.Core/1.47.1": {
       "type": "package",
       "serviceable": true,
@@ -4656,6 +4709,13 @@
       "sha512": "sha512-yjj+3zgz8zgXpiiC3ZdF/iyTBbz2fFvMxZFEBPUcwZjIvXOf37Ylm+K58hqMfIBt5JgU/Z2uoUS67JmTLe973A==",
       "path": "sharpziplib/1.4.2",
       "hashPath": "sharpziplib.1.4.2.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/3.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dHQ5jugF9v+5/LCVHCWVzaaIL6WOehqJy6eju/0VFYFPEj2WtqkGPoEV9EVQP83dHsdoqYaTuWpZdwAd37UwfA==",
+      "path": "sixlabors.imagesharp/3.1.6",
+      "hashPath": "sixlabors.imagesharp.3.1.6.nupkg.sha512"
     },
     "SSH.NET/2025.1.0": {
       "type": "package",

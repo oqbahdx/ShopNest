@@ -1,4 +1,6 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
+using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 
 namespace ShopNest.Application.Features.Products.Commands.UpdateStock;
@@ -7,7 +9,12 @@ public sealed class UpdateStockCommandHandler
     : IRequestHandler<UpdateStockCommand, Result>
 {
     private readonly IApplicationDbContext _db;
-    public UpdateStockCommandHandler(IApplicationDbContext db) => _db = db;
+    private readonly ICacheService _cache;
+    public UpdateStockCommandHandler(IApplicationDbContext db, ICacheService cache)
+    {
+        _db = db;
+        _cache = cache;
+    }
 
     public async Task<Result> Handle(
         UpdateStockCommand cmd, CancellationToken ct)
@@ -20,6 +27,8 @@ public sealed class UpdateStockCommandHandler
         // 2. Apply manual stock adjustment via entity method
         product.SetStock(cmd.NewQuantity);
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Products.Prefix, ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result.Success();
     }
 }

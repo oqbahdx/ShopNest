@@ -1,4 +1,6 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
+using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 
 namespace ShopNest.Application.Features.Products.Commands.SetPrimaryImage;
@@ -7,7 +9,12 @@ public sealed class SetPrimaryImageCommandHandler
     : IRequestHandler<SetPrimaryImageCommand, Result>
 {
     private readonly IApplicationDbContext _db;
-    public SetPrimaryImageCommandHandler(IApplicationDbContext db) => _db = db;
+    private readonly ICacheService _cache;
+    public SetPrimaryImageCommandHandler(IApplicationDbContext db, ICacheService cache)
+    {
+        _db = db;
+        _cache = cache;
+    }
     public async Task<Result> Handle(
         SetPrimaryImageCommand cmd, CancellationToken ct)
     {
@@ -28,6 +35,8 @@ public sealed class SetPrimaryImageCommandHandler
         foreach (var image in images)
             image.SetPrimary(image.Id == cmd.ImageId);
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Products.Prefix, ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result.Success();
     }
 }

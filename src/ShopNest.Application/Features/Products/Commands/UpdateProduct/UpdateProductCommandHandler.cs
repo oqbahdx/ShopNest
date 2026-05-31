@@ -1,5 +1,7 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
 using ShopNest.Application.Common.Extensions;
+using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 
 namespace ShopNest.Application.Features.Products.Commands.UpdateProduct;
@@ -8,7 +10,12 @@ public sealed class UpdateProductCommandHandler
     : IRequestHandler<UpdateProductCommand, Result>
 {
     private readonly IApplicationDbContext _db;
-    public UpdateProductCommandHandler(IApplicationDbContext db) => _db = db;
+    private readonly ICacheService _cache;
+    public UpdateProductCommandHandler(IApplicationDbContext db, ICacheService cache)
+    {
+        _db = db;
+        _cache = cache;
+    }
 
     public async Task<Result> Handle(
         UpdateProductCommand cmd, CancellationToken ct)
@@ -60,6 +67,8 @@ public sealed class UpdateProductCommandHandler
             categoryId: cmd.CategoryId
         );
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Products.Prefix, ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result.Success();
     }
 }

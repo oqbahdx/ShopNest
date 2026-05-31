@@ -8,9 +8,8 @@ public static class InfrastructureServiceExtensions
 {
 	public static IServiceCollection AddCatalogInfrastructure(this IServiceCollection services)
 	{
-		services.AddScoped<IFileService, LocalFileService>();
-		services.AddHttpContextAccessor();
-		services.AddMemoryCache();
+		services.AddScoped<IFileService, CloudflareR2FileService>();
+		services.AddScoped<ICacheService, RedisCacheService>();
 		return services;
 	}
 }

@@ -1,4 +1,5 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
 using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 
@@ -9,12 +10,14 @@ public sealed class DeleteProductImageCommandHandler
 {
     private readonly IApplicationDbContext _db;
     private readonly IFileService _fileService;
+    private readonly ICacheService _cache;
 
     public DeleteProductImageCommandHandler(
-        IApplicationDbContext db, IFileService fileService)
+        IApplicationDbContext db, IFileService fileService, ICacheService cache)
     {
         _db = db;
         _fileService = fileService;
+        _cache = cache;
     }
 
     public async Task<Result> Handle(
@@ -53,6 +56,8 @@ public sealed class DeleteProductImageCommandHandler
         await _fileService.DeleteAsync(target.ImageUrl, "products", ct);
         _db.ProductImages.Remove(target);
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Products.Prefix, ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result.Success();
     }
 }

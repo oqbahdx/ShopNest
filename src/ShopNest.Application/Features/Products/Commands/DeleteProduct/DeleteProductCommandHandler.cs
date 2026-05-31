@@ -1,4 +1,6 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
+using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 using ShopNest.Domain.Enums;
 
@@ -8,7 +10,12 @@ public sealed class DeleteProductCommandHandler
     : IRequestHandler<DeleteProductCommand, Result>
 {
     private readonly IApplicationDbContext _db;
-    public DeleteProductCommandHandler(IApplicationDbContext db) => _db = db;
+    private readonly ICacheService _cache;
+    public DeleteProductCommandHandler(IApplicationDbContext db, ICacheService cache)
+    {
+        _db = db;
+        _cache = cache;
+    }
 
     public async Task<Result> Handle(
         DeleteProductCommand cmd, CancellationToken ct)
@@ -37,6 +44,8 @@ public sealed class DeleteProductCommandHandler
         // 3. Soft-delete via EF + ISoftDeletable (SaveChangesAsync intercepts)
         _db.Products.Remove(product);
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Products.Prefix, ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result.Success();
     }
 }

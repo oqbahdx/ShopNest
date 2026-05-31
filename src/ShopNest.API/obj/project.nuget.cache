@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cdEFc6pYk8M=",
+  "dgSpecHash": "d2c5vqtR0s4=",
   "success": true,
   "projectFilePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/ShopNest.API.csproj",
   "expectedPackageFiles": [
     "/Users/ositrade/.nuget/packages/automapper/16.1.1/automapper.16.1.1.nupkg.sha512",
+    "/Users/ositrade/.nuget/packages/awssdk.core/4.0.7.4/awssdk.core.4.0.7.4.nupkg.sha512",
+    "/Users/ositrade/.nuget/packages/awssdk.s3/4.0.23.5/awssdk.s3.4.0.23.5.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/azure.core/1.47.1/azure.core.1.47.1.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/azure.identity/1.14.2/azure.identity.1.14.2.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg.sha512",
@@ -60,6 +62,7 @@
     "/Users/ositrade/.nuget/packages/serilog.sinks.console/6.1.1/serilog.sinks.console.6.1.1.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/serilog.sinks.debug/3.0.0/serilog.sinks.debug.3.0.0.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/serilog.sinks.file/7.0.0/serilog.sinks.file.7.0.0.nupkg.sha512",
+    "/Users/ositrade/.nuget/packages/sixlabors.imagesharp/3.1.6/sixlabors.imagesharp.3.1.6.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/stackexchange.redis/2.13.1/stackexchange.redis.2.13.1.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/starkbank-ecdsa/1.3.3/starkbank-ecdsa.1.3.3.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/stripe.net/51.1.0/stripe.net.51.1.0.nupkg.sha512",
@@ -78,5 +81,30 @@
     "/Users/ositrade/.nuget/packages/system.security.cryptography.pkcs/9.0.4/system.security.cryptography.pkcs.9.0.4.nupkg.sha512",
     "/Users/ositrade/.nuget/packages/system.security.cryptography.protecteddata/9.0.4/system.security.cryptography.protecteddata.9.0.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'SixLabors.ImageSharp' 3.1.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-2cmq-823j-5qj8",
+      "projectPath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/ShopNest.API.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/ShopNest.API.csproj",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'SixLabors.ImageSharp' 3.1.6 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-rxmq-m78w-7wmc",
+      "projectPath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/ShopNest.API.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/ositrade/Desktop/E-Commerce Projects/ShopNest/src/ShopNest.API/ShopNest.API.csproj",
+      "libraryId": "SixLabors.ImageSharp",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

@@ -1,5 +1,7 @@
 using MediatR;
+using ShopNest.Application.Common.Cache;
 using ShopNest.Application.Common.Extensions;
+using ShopNest.Application.Common.Interfaces;
 using ShopNest.Application.Common.Models;
 using ShopNest.Domain.Entities;
 
@@ -9,8 +11,13 @@ public sealed class CreateCategoryCommandHandler
     : IRequestHandler<CreateCategoryCommand, Result<Guid>>
 {
     private readonly IApplicationDbContext _db;
+    private readonly ICacheService _cache;
     private const int MaxDepth = 3;
-    public CreateCategoryCommandHandler(IApplicationDbContext db) => _db = db;
+    public CreateCategoryCommandHandler(IApplicationDbContext db, ICacheService cache)
+    {
+        _db = db;
+        _cache = cache;
+    }
 
     public async Task<Result<Guid>> Handle(
         CreateCategoryCommand cmd, CancellationToken ct)
@@ -48,6 +55,7 @@ public sealed class CreateCategoryCommandHandler
         );
         _db.Categories.Add(category);
         await _db.SaveChangesAsync(ct);
+        await _cache.RemoveByPrefixAsync(CacheKeys.Categories.Prefix, ct);
         return Result<Guid>.Success(category.Id);
     }
 

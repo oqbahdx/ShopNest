@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopNest.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3267413dc0306601080eb87184a7d3a94a2f41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c09397fb0edaf1e492b2a42739bc0832a005b57a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopNest.IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopNest.IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

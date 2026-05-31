@@ -1,13 +1,15 @@
 using Microsoft.AspNetCore.Identity;
 using Serilog;
 using Scalar.AspNetCore;
+using ShopNest.API.Extensions;
 using ShopNest.API.Middleware;
 using ShopNest.Application;
 using ShopNest.Application.Common.Interfaces;
-using ShopNest.Application.Common.Settings;
 using ShopNest.Infrastructure;
 using ShopNest.Infrastructure.Identity;
 using ShopNest.Infrastructure.Services;
+using ShopNest.Infrastructure.Settings;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,37 +30,49 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddCatalogInfrastructure();
 
 // ── Stripe ────────────────────────────────────────────────────────────────────
-// 1. Bind StripeSettings from appsettings.json (after existing IOptions wiring):
-builder.Services.Configure<StripeSettings>(
-    builder.Configuration.GetSection(StripeSettings.SectionName));
-
-// 2. Register StripePaymentService (after existing AddCatalogInfrastructure()):
+builder.Services.Configure<ShopNest.Application.Common.Settings.StripeSettings>(
+    builder.Configuration.GetSection("Stripe"));
 builder.Services.AddScoped<IPaymentService, StripePaymentService>();
 
-// 3. Disable request body buffering on the webhook route so Stripe
-//    signature validation works (raw body must reach the controller):
 builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(o =>
 {
     o.MultipartBodyLengthLimit = long.MaxValue;
 });
 
+// ── Redis ─────────────────────────────────────────────────────────────────────
+builder.Services.Configure<RedisSettings>(
+    builder.Configuration.GetSection(RedisSettings.SectionName));
+
+builder.Services.AddSingleton<IConnectionMultiplexer>(_ =>
+    ConnectionMultiplexer.Connect(
+        builder.Configuration
+            .GetSection(RedisSettings.SectionName)
+            .GetValue<string>("ConnectionString")
+        ?? "localhost:6379"));
+
+// ── Cloudflare R2 ─────────────────────────────────────────────────────────────
+builder.Services.Configure<CloudflareR2Settings>(
+    builder.Configuration.GetSection(CloudflareR2Settings.SectionName));
+
+// ── Rate limiting ─────────────────────────────────────────────────────────────
+builder.Services.AddShopNestRateLimiting();
+
+// ── Controllers + OpenAPI ─────────────────────────────────────────────────────
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
-
-
-// ── CORS (adjust origins for production) ─────────────────────────────────────
+// ── CORS ─────────────────────────────────────────────────────────────────────
 builder.Services.AddCors(opts =>
     opts.AddPolicy("AllowFrontend", p =>
         p.WithOrigins("http://localhost:3000", "https://app.shopnest.com")
          .AllowAnyMethod()
          .AllowAnyHeader()
-         .AllowCredentials()));  // AllowCredentials needed for HttpOnly cookie
+         .AllowCredentials()));
 
 var app = builder.Build();
 
-// ── Seed roles on startup ─────────────────────────────────────────────────────
+// ── Seed roles ────────────────────────────────────────────────────────────────
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider
@@ -72,7 +86,8 @@ using (var scope = app.Services.CreateScope())
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging();
 
-
+// Rate limiting must be before authentication
+app.UseShopNestRateLimiting();
 
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
@@ -90,5 +105,4 @@ app.MapControllers();
 
 app.Run();
 
-// Required for WebApplicationFactory in integration tests
 public partial class Program { }
